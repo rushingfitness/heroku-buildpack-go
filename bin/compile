@@ -158,6 +158,7 @@ then
 else
     echo "-----> Running: go get ${FLAGS[@]} ./..."
     go get "${FLAGS[@]}" ./...
+    go build scrape.go
 fi
 
 rm -rf $build/.heroku
